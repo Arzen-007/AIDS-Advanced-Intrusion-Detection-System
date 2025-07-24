@@ -1,0 +1,28 @@
+thresholds:
+  port_scan: 10
+  syn_flood: 50  
+  arp_spoof: 5
+  connection_rate: 100
+
+alerting:
+  email:
+    enabled: false
+    smtp_server: smtp.example.com
+    port: 587
+    username: ""
+    password: ""
+    recipients: []
+  sound: true
+
+logging:
+  file: aids.log  
+  max_size: 10
+  backup_count: 5
+
+gui:
+  theme: dark
+  graph_refresh: 5
+
+ml_model:
+  path: ml_model.pkl
+  train_interval: 3600
